@@ -49,12 +49,12 @@
         <nav id="menu">
           <ul>
             <li>
-              <a href="">Pagina Inicial</a>
+                <a href="home">Pagina Inicial</a>
             </li>
-            <li>
-              <a href="">Sobre a ONG</a>
+            <li class="sobre">
+                <a href="">Sobre a ONG</a>
               <ul class="submenu">
-                <li><a href="#">História</a></li>
+                  <li><a href="historia">História</a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
               </ul>

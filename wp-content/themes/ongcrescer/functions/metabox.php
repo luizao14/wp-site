@@ -14,4 +14,8 @@
   if($_page && $_page->post_name == "home"){
     add_filter( 'rwmb_meta_boxes', 'destaque_meta_box' );
   }
+  
+  if($_page && $_page->post_name == "historia"){
+    add_filter( 'rwmb_meta_boxes', 'historia_meta_box' );
+  }
 ?>
