@@ -11,8 +11,8 @@ function theme_create_page($title, $template="", $content="sem conteúdo"){
     );
     if(!isset($page_check->ID)){
       $new_page_id = wp_insert_post($new_page);
-      if(!empty($new_page_template)){
-        update_post_meta($new_page_id, '_wp_page_template', $new_page_template);
+      if(!empty($template)){
+        add_post_meta($new_page_id, '_wp_page_template', $template);
       }
     }
   }
