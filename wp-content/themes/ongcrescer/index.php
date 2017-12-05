@@ -30,27 +30,27 @@
             <div class="category-icons">
               <ul>
                 <li>
-                  <i class="fa fa-pencil"></i>
+                    <p class="unicode">&#x1F46A;</p>
                   <span>Familia</span>
                 </li>
                 <li>
-                  <i class="fa fa-pencil"></i>
+                    <p class="unicode">&#x26BD;</p>
                   <span>Esportes</span>
                 </li>
                 <li>
-                  <i class="fa fa-pencil"></i>
+                    <p class="unicode">&#x1F415;</p>
                   <span>Animais</span>
                 </li>
                 <li>
-                  <i class="fa fa-pencil"></i>
+                    <p class="unicode">&#x1F467;</p>
                   <span>Crianças e Jovens</span>
                 </li>
                 <li>
-                  <i class="fa fa-pencil"></i>
+                    <p class="unicode">&#x1F393;</p>
                   <span>Educação</span>
                 </li>
                 <li>
-                  <i class="fa fa-pencil"></i>
+                    <p class="unicode">&#x1F30F;</p>
                   <span>Meio Ambiente</span>
                 </li>
               </ul>

@@ -29,7 +29,12 @@
 
       > .submenu { display: none;}
       > .submenu-active { display: block; }
+      
     }
+    .sobre:hover ul.submenu{ display: block;}
+    .submenu{position: absolute; background-color: white;}
   }
 
 }
+        
+    
