@@ -11,13 +11,15 @@ function theme_create_page($title, $template="", $content="sem conteúdo"){
     );
     if(!isset($page_check->ID)){
       $new_page_id = wp_insert_post($new_page);
-      if(!empty($template)){
-        add_post_meta($new_page_id, '_wp_page_template', $template);
+      if(!empty($new_page_template)){
+        update_post_meta($new_page_id, '_wp_page_template', $new_page_template);
       }
     }
   }
 }
 
 theme_create_page('Home');
-theme_create_page('Historia');
+theme_create_page('Historia', 'historia.php');
+theme_create_page('Premios', 'premios.php');
+theme_create_page('Projetos','projetos.php');
 ?>

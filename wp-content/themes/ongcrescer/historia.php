@@ -19,14 +19,12 @@
           $image_background = $image["full_url"];
         }
     ?>
-    
-    
-            <div class="historia-ong-carousel-item">
+    <div class="l-historia">
+    <div class="row-content">
+            <div class="historia-ong-item">
               <h1 class="historia-title"><?php echo rwmb_meta( 'historia-title' ) ?></h1>
               <p  class="historia-subtitle"><?php echo rwmb_meta( 'historia-subtitle' ) ?></p>
             </div>
-            <div class="historia-ong-carousel" style="background: url(<?php echo $image_background ?>) no-repeat ">
-          </div>
     <div id="historia-content">
           <?php 
           
@@ -39,6 +37,9 @@
               
                 <?php endforeach; ?>
                 <?php endif; ?>
+    </div>
+        <img class="historia-img" src="<?php echo $image_background ?>"/>
+    </div>
     </div>
 </main>
 

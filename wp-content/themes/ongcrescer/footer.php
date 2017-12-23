@@ -35,7 +35,7 @@
           </div>
 
           <div class="logo col-md-3">
-            <a href=""><img src="<?php image_url("logo-footer.png") ?>" alt=""></a>
+            <a href="home"><img src="<?php image_url("logo-footer.png") ?>" alt="OngCrescer"></a>
           </div>
         </div>
 

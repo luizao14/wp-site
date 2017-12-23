@@ -3,10 +3,10 @@
    ======================= */
 
 .l-footer {
+    text-align: center;
   background: $dark-gray;
   padding: 5em 0 1em;
   color: $white-0;
-
   a {
     color: $white-0;
   }
@@ -51,6 +51,9 @@
   .logo a {
     display: block;
     padding-top: 4em;
+  }
+  img{
+      width: 100%;
   }
 }
 

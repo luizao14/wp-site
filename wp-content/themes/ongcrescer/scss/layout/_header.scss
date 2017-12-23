@@ -10,6 +10,10 @@
   #logo{
     display: inline-block;
   }
+  
+  img{
+      width: 100%;
+  }
 
   #menu {
     width: 100%;
@@ -32,9 +36,69 @@
       
     }
     .sobre:hover ul.submenu{ display: block;}
+    .submenu li{ display: block;}
     .submenu{position: absolute; background-color: white;}
   }
-
+  
+  #dash{ cursor: pointer; display: none; font-size: 3em; margin-bottom: 0;}
+  
+  @media screen and (max-width: 1000px) {
+    nav#menu{
+        margin-top: 0;
+        box-shadow: 1px 1px 1px 7px white;
+        display: none;
+        .sobre:hover ul.submenu{ display: inline;}
+        .submenu li{ display: inline;}
+        li{
+            padding: 0;
+            width: 90%;
+            background-color: black;
+            border-bottom: solid $white-0;
+            
+            a{
+                text-decoration: none;
+                margin-left: 1%;
+                font-size: 1em;
+                color: $white-0;
+            }
+        }
+        li:hover{
+            background-color: $white-0;
+            transition: 1s;
+            .submenu{position: relative;}
+            .submenu li{ display: block; background-color: white; margin-right: 0; margin-left: 1em;}
+        }
+        li:hover a{
+                color: black;
+            }
+            li.sobre{
+                
+                ul a{
+                    color: white;
+                }
+                background-color: none;
+                .submenu li{ display: block; background-color: black; margin-right: 0; margin-left: 1em;}
+                
+            }
+            li.sobre:hover {
+                background-color: none;
+            }
+            li.sobre ul a:hover{
+                color: black;
+            }
+            
+            li.sobre li:hover a{
+                color: black;
+            }
+            li.sobre li:hover{
+                background-color: white;
+            }
+    }
+    
+    #dash{
+        display: block;
+    }
+    
+}
 }
         
-    

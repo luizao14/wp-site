@@ -16,9 +16,12 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
+        <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/app/header.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
+    
     <nav id="navbar" class="l-navbar">
       <div class="row-content">
         <ul class="social-icons">
@@ -44,23 +47,24 @@
     <header class="l-header">
 
       <div class="row-content">
-        <a id="logo" href="#"><img src="<?php image_url("logo.png") ?>" alt=""></a>
-
+        <a id="logo" href="home"><img src="<?php image_url("logo.png") ?>" alt="OngCrescer"/></a>
+        <p id="dash">&#9776;</p>
         <nav id="menu">
           <ul>
             <li>
                 <a href="home">Pagina Inicial</a>
             </li>
             <li class="sobre">
-                <a href="">Sobre a ONG</a>
-              <ul class="submenu">
+                <div>
+                <a class="link-sobre" href="">Sobre a ONG</a>
+                </div>
+            <ul class="submenu">
                   <li><a href="historia">História</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
+                  <li><a href="premios">Prêmios</a></li>
+            </ul>
             </li>
             <li>
-              <a href="">Projetos</a>
+                <a href="projetos">Projetos</a>
             </li>
             <li>
               <a href="">Doe Agora</a>
@@ -78,3 +82,4 @@
         </nav>
       </div>
     </header>
+    
