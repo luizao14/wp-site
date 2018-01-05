@@ -1,11 +1,11 @@
 <?php
 
-function historia_meta_box( $meta_boxes ) {
-	$prefix = 'historia-';
+function premios_meta_box( $meta_boxes ) {
+	$prefix = 'premios-';
 
 	$meta_boxes[] = array(
-		'id' => 'historia-1',
-		'title' => esc_html__( 'Historia 1', 'metabox-online-generator' ),
+		'id' => 'premios-1',
+		'title' => esc_html__( 'Premios', 'metabox-online-generator' ),
 		'post_types' => array( 'page' ),
 		'context' => 'advanced',
 		'priority' => 'default',
@@ -33,6 +33,13 @@ function historia_meta_box( $meta_boxes ) {
 				'type' => 'image_advanced',
 				'name' => esc_html__( 'Imagem do Destaque', 'metabox-online-generator' ),
 				'desc' => esc_html__( 'Imagem de fundo do destaque', 'metabox-online-generator' ),
+				'max_file_uploads' => '1',
+			),
+                        array(
+				'id' => $prefix . 'image-2',
+				'type' => 'image_advanced',
+				'name' => esc_html__( 'Imagem do Destaque-2', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'Imagem de fundo do destaque-2', 'metabox-online-generator' ),
 				'max_file_uploads' => '1',
 			),
 		),
