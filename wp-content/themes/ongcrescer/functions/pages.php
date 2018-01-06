@@ -22,4 +22,5 @@ theme_create_page('Home');
 theme_create_page('Historia', 'historia.php');
 theme_create_page('Premios', 'premios.php');
 theme_create_page('Projetos','projetos.php');
+theme_create_page('Login','login.php');
 ?>

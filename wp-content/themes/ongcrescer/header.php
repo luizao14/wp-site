@@ -37,7 +37,10 @@
         </ul>
 
         <ul class="actions">
-          <li class="phone"><span>(11) 0000-0000</span></li>
+            <li class="li-navbar"><span><a href="">(11) 0000-0000</a></span></li>
+          <li class="li-navbar"><span><a href="">Suporte</a></span></li>
+          <li class="li-navbar"><span><a href="login">Login</a></span></li>
+          <li class="li-navbar"><span><a href="login">Cadastre-se</a></span></li>
         </ul>
 
         <div class="clear"></div>
@@ -60,7 +63,7 @@
                 </div>
             <ul class="submenu">
                   <li><a href="historia">História</a></li>
-                  <li><a href="premios">Prêmios</a></li>
+                  <li><a href="premios">prêmios</a></li>
             </ul>
             </li>
             <li>

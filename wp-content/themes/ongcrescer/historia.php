@@ -38,7 +38,11 @@
                 <?php endforeach; ?>
                 <?php endif; ?>
     </div>
-        <img class="historia-img" src="<?php echo $image_background ?>"/>
+        <?php if (rwmb_meta( 'historia-image' ) == TRUE){ ?> 
+        <div class="div-img">
+        <img class='historia-img' src='<?php echo $image_background?>'/> 
+        </div>
+        <?php }?>
     </div>
     </div>
 </main>

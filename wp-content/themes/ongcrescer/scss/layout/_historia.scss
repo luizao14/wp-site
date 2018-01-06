@@ -5,11 +5,17 @@
     background-color: $white-0;
     padding-bottom: 50px;
 }
+.div-img{
+    width: 50%;
+     display: inline-block;
+     text-align: right;
+}
 .historia-img{
     height: 300px;
     width: 300px;
     display: inline-block;
-    float: right;
+    
+    
 }
 
 .historia-ong-item{
@@ -22,9 +28,14 @@
     width: 50%;
     display: inline-block;
     margin-bottom: 1em;
+    float: left;
 }
 
 @media screen and (max-width: 768px) {
+    #div-img{
+    width: 100%;
+     display: block;
+}
     .historia-img{
         width: 100%;
         display: block;

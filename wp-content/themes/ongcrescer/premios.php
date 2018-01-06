@@ -44,8 +44,17 @@
                 <?php endforeach; ?>
                 <?php endif; ?>
     </div>
-        <img class="premios-img" src="<?php echo $image_background ?>"/>
+         <?php if (rwmb_meta( 'premios-image-2' ) == TRUE){ ?> 
+        <div class="div-img2">
         <img class="premios-img-2" src="<?php echo $image_background2 ?>"/>
+        </div>
+        <?php }?>
+        <?php if (rwmb_meta( 'premios-image' ) == TRUE){ ?> 
+        <div class="div-img">
+        <img class="premios-img" src="<?php echo $image_background ?>"/>
+        </div>
+        <?php }?>
+       
     </div>
     </div>
 </main>
