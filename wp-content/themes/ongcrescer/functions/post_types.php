@@ -1,4 +1,6 @@
 <?php
+
+add_action( 'init', 'create_post_type_evento' );
 function create_post_type_evento() {
   register_post_type( 'ong_event',
     array(
@@ -16,6 +18,7 @@ function create_post_type_evento() {
   );
 }
 
+add_action( 'init', 'create_post_type_projetos' );
 function create_post_type_projetos() {
   register_post_type( 'ong_projetos',
     array(
@@ -32,8 +35,23 @@ function create_post_type_projetos() {
     )
   );
 }
-add_action( 'init', 'create_post_type_evento' );
-add_action( 'init', 'create_post_type_projetos' );
 
 
+add_action( 'init', 'create_post_type_voluntario' );
+function create_post_type_voluntario() {
+  register_post_type( 'ong_voluntario',
+    array(
+      'labels' => array(
+        'name' => __( 'Voluntários' ),
+        'singular_name' => __( 'Voluntário' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-groups',
+      'rewrite' => array(
+        'slug' => 'voluntarios'
+      )
+    )
+  );
+}
 ?>
