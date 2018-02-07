@@ -8829,6 +8829,27 @@ i.fa.fa-heart {
   .caixa-preco {
     width: 100px; } }
 
+.l-voluntarios {
+  margin-top: 2em;
+  padding-top: 4em;
+  padding-bottom: 6em;
+  background: #ffffff; }
+  .l-voluntarios .title {
+    font-size: 1.8em;
+    font-weight: bold; }
+  .l-voluntarios .lista-voluntarios {
+    margin-top: 3.5em; }
+  .l-voluntarios .voluntario a {
+    display: block;
+    text-align: center;
+    color: #242424; }
+  .l-voluntarios .voluntario img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 0.5em; }
+
+
 /* Modules */
 .ong-carousel {
   padding-top: 12em;

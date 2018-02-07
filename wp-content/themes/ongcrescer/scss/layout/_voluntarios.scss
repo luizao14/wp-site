@@ -1,0 +1,30 @@
+.l-voluntarios{
+  margin-top: 2em;
+  padding-top: 4em;
+  padding-bottom: 6em;
+  background: $white-0;
+
+  .title {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .lista-voluntarios{
+    margin-top: 3.5em;
+  }
+
+  .voluntario {
+    a{
+      display: block;
+      text-align: center;
+      color: $dark-gray;
+    }
+
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      margin-bottom: 0.5em;
+    }
+  }
+}
