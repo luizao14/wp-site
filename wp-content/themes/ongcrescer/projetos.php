@@ -42,7 +42,7 @@
         
     ?>
                             
-                            <div class="div-img">
+                            <div class="div-img-projetos">
 					<img align="middle" class="img-circle" src="<?php echo $image_background ?>" />
 				</div>
                             <div class="info">

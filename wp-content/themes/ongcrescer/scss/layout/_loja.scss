@@ -1,0 +1,98 @@
+.l-loja {
+
+	margin-top: 1.4em;
+	padding-top: 4em;
+	padding-bottom: 1em;
+	background: $white-0;
+        
+        .loja-bloco{
+            width: 100%;
+        }
+
+	.title-loja {
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+        
+        .imagem-loja{
+            width: 250px;
+            height: 250px;
+        }
+
+	.titulo-caixa-loja {
+		font-size: 0.7em;
+		font-weight: bold;
+                width: 250px;
+	}
+
+	a {
+		font-size: 10px;
+		color: $white-0;
+		text-align: center;
+	}
+
+	.botoes-cima {
+		margin: 1em 0 0;
+	}
+        
+        .botoes-cima a{
+		margin-bottom: 1em;
+	}
+
+	.caixa {
+    font-size: 0.9em;
+    width: 10px;
+	}
+
+}
+
+i.fa.fa-heart {
+    color: red;
+    font-size: 12px;
+}
+
+.caixa-preco {
+    width: 50%;
+    display: inline-block;
+	font-size: 0.72em;
+	padding: 0 0 0 2em;
+}
+
+.botao-queroisso {
+    display: inline-block;
+    width: 40%;
+}
+
+.espaco-linha {
+	margin: 2em 0 0;
+        width: 25%;
+        
+}
+
+.espaco-linha-pagination {
+	margin: 4em 0 1em;
+
+	a {
+		color:$white-0
+	}
+}
+
+@media screen and (max-width: 1200px) {
+    .espaco-linha {
+        width: 50%;
+}
+    .caixa-preco {
+    width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .espaco-linha {
+        width: 100%;
+}
+    .caixa-preco {
+        width: 100px;
+    }
+    
+    
+}

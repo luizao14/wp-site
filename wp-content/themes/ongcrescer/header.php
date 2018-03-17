@@ -37,7 +37,10 @@
         </ul>
 
         <ul class="actions">
-          <li class="phone"><span>(11) 0000-0000</span></li>
+            <li class="li-navbar"><span><a href="">(11) 0000-0000</a></span></li>
+          <li class="li-navbar"><span><a href="">Suporte</a></span></li>
+          <li class="li-navbar"><span><a href="login">Login</a></span></li>
+          <li class="li-navbar"><span><a href="login">Cadastre-se</a></span></li>
         </ul>
 
         <div class="clear"></div>
@@ -52,25 +55,36 @@
         <nav id="menu">
           <ul>
             <li>
-                <a href="home">Pagina Inicial</a>
+                <a href="home">Home</a>
             </li>
-            <li class="sobre">
-                <div>
-                <a class="link-sobre" href="">Sobre a ONG</a>
-                </div>
+            <li class="menus-ongcrescer">
+                <a class="link-ongcrescer" href="">Sobre a ONG</a>
             <ul class="submenu">
-                  <li><a href="historia">História</a></li>
+                  <li><a href="historia">Nossa História</a></li>
                   <li><a href="premios">Prêmios</a></li>
             </ul>
             </li>
-            <li>
-                <a href="projetos">Projetos</a>
+            <li class="menus-ongcrescer">
+                <a class="link-ongcrescer" href="projetos">Projetos</a>
+                <ul class="submenu">
+                  <li><a href="">Enviar um Projeto</a></li>
+                  <li><a href="">Guia de Voluntariado</a></li>
+            </ul>
             </li>
             <li>
-              <a href="">Doe Agora</a>
+              <a href="">Eventos</a>
+            </li>
+            <li class="menus-ongcrescer">
+                <a class="link-ongcrescer" href="">Como Ajudar?</a>
+                <ul class="submenu">
+                  <li><a href="">Faça uma Doação</a></li>
+                  <li><a href="">Voluntariado</a></li>
+                  <li><a href="">Seja Sócio</a></li>
+                  <li><a href="">Participe dos Eventos</a></li>
+            </ul>
             </li>
             <li>
-              <a href="">Voluntariado</a>
+              <a href="loja">Loja Oficial</a>
             </li>
             <li>
               <a href="">Blog</a>

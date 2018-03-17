@@ -35,9 +35,9 @@
       > .submenu-active { display: block; }
       
     }
-    .sobre:hover ul.submenu{ display: block;}
+    .menus-ongcrescer:hover ul.submenu{ display: block;}
     .submenu li{ display: block;}
-    .submenu{position: absolute; background-color: white;}
+    .submenu{z-index: 1; position: absolute; background-color: white; border: whitesmoke solid;}
   }
   
   #dash{ cursor: pointer; display: none; font-size: 3em; margin-bottom: 0;}
@@ -47,7 +47,7 @@
         margin-top: 0;
         box-shadow: 1px 1px 1px 7px white;
         display: none;
-        .sobre:hover ul.submenu{ display: inline;}
+        .menus-ongcrescer:hover ul.submenu{ display: inline;}
         .submenu li{ display: inline;}
         li{
             padding: 0;
@@ -71,7 +71,7 @@
         li:hover a{
                 color: black;
             }
-            li.sobre{
+            li.menus-ongcrescer{
                 
                 ul a{
                     color: white;
@@ -80,17 +80,17 @@
                 .submenu li{ display: block; background-color: black; margin-right: 0; margin-left: 1em;}
                 
             }
-            li.sobre:hover {
+            li.menus-ongcrescer:hover {
                 background-color: none;
             }
-            li.sobre ul a:hover{
+            li.menus-ongcrescer ul a:hover{
                 color: black;
             }
             
-            li.sobre li:hover a{
+            li.menus-ongcrescer li:hover a{
                 color: black;
             }
-            li.sobre li:hover{
+            li.menus-ongcrescer li:hover{
                 background-color: white;
             }
     }
