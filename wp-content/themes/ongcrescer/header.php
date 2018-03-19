@@ -59,6 +59,7 @@
             </li>
             <li class="menus-ongcrescer">
                 <a class="link-ongcrescer" href="sobre">Sobre a ONG</a>
+                <a class="link-ongcrescer" href="">Sobre a ONG</a>
             <ul class="submenu">
                   <li><a href="historia">Nossa História</a></li>
                   <li><a href="premios">Prêmios</a></li>
@@ -79,6 +80,7 @@
                 <ul class="submenu">
                   <li><a href="">Faça uma Doação</a></li>
                   <li><a href="voluntarios">Voluntariado</a></li>
+                  <li><a href="">Voluntariado</a></li>
                   <li><a href="">Seja Sócio</a></li>
                   <li><a href="">Participe dos Eventos</a></li>
             </ul>

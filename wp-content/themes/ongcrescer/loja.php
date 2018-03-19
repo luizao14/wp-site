@@ -33,12 +33,13 @@
 		<div class="row-content">
 			<div class="row loja-bloco">
                             <?php 
-          
+        
                 $args = array(
                     'post_type' => 'ong_loja',
                     'orderby'   => 'title',
                     'order'     => 'ASC',
                     );
+                $args = array('post_type' => 'loja' );
                 $my_page = get_posts($args);
                 ?>
                 <?php if($my_page) : foreach ($my_page as $post) : setup_postdata($post); ?>

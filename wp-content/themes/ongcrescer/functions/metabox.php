@@ -42,4 +42,5 @@
   if($_page && $_page->post_name == "sobre"){
     add_filter( 'rwmb_meta_boxes', 'sobre_meta_box' );
   }
+
 ?>

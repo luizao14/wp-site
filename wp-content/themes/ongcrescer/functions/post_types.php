@@ -38,6 +38,7 @@ function create_post_type_projetos() {
 add_action( 'init', 'create_post_type_loja' );
 function create_post_type_loja() {
   register_post_type( 'ong_loja',
+  register_post_type( 'loja',
     array(
       'labels' => array(
         'name' => __( 'Loja' ),
