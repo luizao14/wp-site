@@ -58,6 +58,7 @@
                 <a href="home">Home</a>
             </li>
             <li class="menus-ongcrescer">
+                <a class="link-ongcrescer" href="sobre">Sobre a ONG</a>
                 <a class="link-ongcrescer" href="">Sobre a ONG</a>
             <ul class="submenu">
                   <li><a href="historia">Nossa História</a></li>
@@ -78,6 +79,7 @@
                 <a class="link-ongcrescer" href="">Como Ajudar?</a>
                 <ul class="submenu">
                   <li><a href="">Faça uma Doação</a></li>
+                  <li><a href="voluntarios">Voluntariado</a></li>
                   <li><a href="">Voluntariado</a></li>
                   <li><a href="">Seja Sócio</a></li>
                   <li><a href="">Participe dos Eventos</a></li>
@@ -87,7 +89,7 @@
               <a href="loja">Loja Oficial</a>
             </li>
             <li>
-              <a href="">Blog</a>
+              <a href="blog">Blog</a>
             </li>
             <li>
               <a href="">Fale Conosco</a>

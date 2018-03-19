@@ -33,7 +33,12 @@
 		<div class="row-content">
 			<div class="row loja-bloco">
                             <?php 
-          
+        
+                $args = array(
+                    'post_type' => 'ong_loja',
+                    'orderby'   => 'title',
+                    'order'     => 'ASC',
+                    );
                 $args = array('post_type' => 'loja' );
                 $my_page = get_posts($args);
                 ?>
@@ -49,7 +54,10 @@
     ?>
 					<div class="espaco-linha"><!-- Inicio da caixinha 1 -->
 						<div class="row-content">
-                                                            <img class="imagem-loja" src="<?php echo $image_background ?>">
+                                                            <?php if ( $image_background == TRUE){?>
+                                                            <img class="imagem-loja" src="<?php echo $image_background ?>"><?php }else{?>
+                                                            <img class="imagem-loja" src="<?php image_url("perfil.jpg") ?>" />
+                                                            <?php }?>
                                                             <p class="titulo-caixa-loja"><?php the_title();?></p>
                                                             <div class="caixa-preco"><strong>
 									<?php if (rwmb_meta( 'loja-preço' ) == TRUE) echo rwmb_meta( 'loja-preço' ); else echo "Valor não informado" ?>
@@ -62,6 +70,8 @@
 						
 					</div><!-- Fim da caixinha 1 -->
                                         <?php endforeach; ?>
+                                        <?php else : ?>
+                <p><?php esc_html_e( 'Ainda não há produtos cadastrados.' ); ?></p>
                 <?php endif; ?>
 					
 			</div><!-- row -->

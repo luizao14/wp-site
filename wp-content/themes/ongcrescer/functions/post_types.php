@@ -1,5 +1,4 @@
 <?php
-
 add_action( 'init', 'create_post_type_evento' );
 function create_post_type_evento() {
   register_post_type( 'ong_event',
@@ -31,13 +30,14 @@ function create_post_type_projetos() {
       'menu_icon' => 'dashicons-hammer',
       'rewrite' => array(
         'slug' => 'projetos'
-      )
+      )  
     )
   );
 }
 
 add_action( 'init', 'create_post_type_loja' );
 function create_post_type_loja() {
+  register_post_type( 'ong_loja',
   register_post_type( 'loja',
     array(
       'labels' => array(
@@ -49,7 +49,7 @@ function create_post_type_loja() {
       'menu_icon' => 'dashicons-cart',
       'rewrite' => array(
         'slug' => 'loja'
-      )
+      )  
     )
   );
 }
@@ -71,4 +71,30 @@ function create_post_type_voluntario() {
     )
   );
 }
+
+add_action( 'init', 'create_post_type_blog' );
+function create_post_type_blog() {
+  register_post_type( 'ong_blog',
+    array(
+      'labels' => array(
+        'name' => __( 'Blog' ),
+        'singular_name' => __( 'Blog' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-format-aside',
+      'rewrite' => array(
+        'slug' => 'blog'
+      )  
+    )
+  );
+}
+
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+
 ?>

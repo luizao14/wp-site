@@ -31,7 +31,7 @@
           <div class="middle col-md-6">
             <h4 class="title">Fique por dentro do nosso canal no YouTube</h4>
 
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmN1_daxG-w" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9AH19B8wMkw" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <div class="logo col-md-3">

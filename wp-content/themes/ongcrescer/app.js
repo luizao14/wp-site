@@ -161,20 +161,18 @@ $('#menu').toggle();
 require.register("js/app/home.js", function(exports, require, module) {
 console.log("page: home");
 
-
+document.getElementById('dash').onclick = function (){
+    document.getElementById('menu').style.display ="block";
+};
 });
 
 require.register("js/app/login.js", function(exports, require, module) {
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+
 });
 
-require.register("___globals___", function(exports, require, module) {
+
+;require.register("___globals___", function(exports, require, module) {
+
   
 });})();require('___globals___');
 
