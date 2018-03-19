@@ -19,7 +19,7 @@
 			</div>
 			<div class="row botoes-cima">
 				<div class="col-12 col-4 ml-auto">
-					<a href="" class="btn btn-warning btn-lg">PONTUAIS</a>
+                                    <a href="" class="btn btn-warning btn-lg">PONTUAIS</a>
 					<a href="" class="btn btn-warning btn-lg">RECORRENTES</a>
 					<a href="" class="btn btn-warning btn-lg">ENCERRADOS</a>
 				</div>
@@ -28,11 +28,15 @@
 <div class="caixa">
                             <?php 
           
-                $args = array('post_type' => 'ong_projetos' );
+                $args = array(
+                    'post_type' => 'ong_projetos',
+                    'orderby'   => 'title',
+                    'order'     => 'ASC',
+                    );
                 $my_page = get_posts($args);
                 ?>
                 <?php if($my_page) : foreach ($my_page as $post) : setup_postdata($post); ?>
-                            
+                
                             <?php
         $images = rwmb_meta( 'projetos-image', 'type=image_advanced' );
         $image_background = null;
@@ -42,8 +46,11 @@
         
     ?>
                             
-                            <div class="div-img">
-					<img align="middle" class="img-circle" src="<?php echo $image_background ?>" />
+                            <div class="div-img-projetos">
+                                <?php if ( $image_background == TRUE){?>
+                                <img align="middle" class="img-circle" src=" <?php echo $image_background;?>" /><?php }else{?>
+                                <img align="middle" class="img-circle" src="<?php image_url("perfil.jpg") ?>" />
+                                <?php }?>
 				</div>
                             <div class="info">
                                     
@@ -61,8 +68,12 @@
 					</div><!-- row botoes-baixo -->
 				</div><!-- col-10 -->
                                 <hr />
-                                <?php endforeach; ?>
+                                <?php endforeach;?>
+    
+                <?php else : ?>
+                <p><?php esc_html_e( 'Ainda não há projetos.' ); ?></p>
                 <?php endif; ?>
+                
 			</div><!-- row caixa -->
 			
                         

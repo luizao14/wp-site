@@ -26,4 +26,36 @@
     display: inline-block;
     text-align: right;
   }
+  .li-navbar{
+      display: inline;
+      margin-left: 3%;
+      border-right: 1px solid;
+      padding-right: 3%
+  }
+  .li-navbar a{
+          color: white;
+          text-decoration: none;
+  }
+  
+  
+  .li-navbar a:hover{
+      background-color: white;
+      color: black;
+      transition: 1s;
+  }
+}
+
+@media screen and (max-width: 720px) {
+    .l-navbar{
+        .social-icons {
+        width: 100%;
+        text-align: center;
+        }
+        .actions {
+            margin-left: 1%;
+            padding-right: 1%;
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

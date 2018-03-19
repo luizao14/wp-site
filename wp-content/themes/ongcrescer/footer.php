@@ -16,26 +16,27 @@
             <h4 class="title">Mais Buscados</h4>
 
             <ul>
-              <li><a href="">Página Inicial</a></li>
+              <li><a href="">Home</a></li>
               <li><a href="">Sobre a ONG</a></li>
               <li><a href="">Projetos</a></li>
-              <li><a href="">Doe agora</a></li>
+              <li><a href="">Como Ajudar?</a></li>
+              <li><a href="">Loja Oficial</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Fale Conosco</a></li>
+              <li><a href="">Faça uma Doação</a></li>
               <li><a href="">Voluntariado</a></li>
-              <li><a href="">Carro Amigo</a></li>
-              <li><a href="">Sala de Imprensa</a></li>
-              <li><a href="">Galeria de Fotos</a></li>
-              <li><a href="">Localização</a></li>
             </ul>
           </div>
 
           <div class="middle col-md-6">
             <h4 class="title">Fique por dentro do nosso canal no YouTube</h4>
 
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmN1_daxG-w" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9AH19B8wMkw" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <div class="logo col-md-3">
             <a href="home"><img src="<?php image_url("logo-footer.png") ?>" alt="OngCrescer"></a>
+            <a href="https://github.com/ongcrescer" target="blank">ONG CRESCER é um projeto Open Source, feito com amor | 2018 &#x2764;</a>
           </div>
         </div>
 

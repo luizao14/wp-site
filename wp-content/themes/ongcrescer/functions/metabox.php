@@ -30,4 +30,16 @@
   if($_page && $_page->post_name == "projetos"){
     add_filter( 'rwmb_meta_boxes', 'projetos_meta_box' );
   }
+  
+  if($_page && $_page->post_name == "loja"){
+    add_filter( 'rwmb_meta_boxes', 'loja_meta_box' );
+  }
+  
+  if($_page && $_page->post_name == "blog"){
+    add_filter( 'rwmb_meta_boxes', 'blog_meta_box' );
+  }
+  
+  if($_page && $_page->post_name == "sobre"){
+    add_filter( 'rwmb_meta_boxes', 'sobre_meta_box' );
+  }
 ?>

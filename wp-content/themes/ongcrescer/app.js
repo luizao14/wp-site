@@ -161,10 +161,16 @@ $('#menu').toggle();
 require.register("js/app/home.js", function(exports, require, module) {
 console.log("page: home");
 
+document.getElementById('dash').onclick = function (){
+    document.getElementById('menu').style.display ="block";
+};
+});
+
+require.register("js/app/login.js", function(exports, require, module) {
 
 });
 
-require.register("___globals___", function(exports, require, module) {
+;require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
 
