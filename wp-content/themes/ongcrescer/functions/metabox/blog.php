@@ -5,7 +5,7 @@ function blog_meta_box( $meta_boxes ) {
 	$meta_boxes[] = array(
 		'id' => 'blog',
 		'title' => esc_html__( 'Detalhes do Artigo', 'metabox-online-generator' ),
-		'post_types' => array( 'blog' ),
+		'post_types' => array( 'ong_blog' ),
 		'context' => 'advanced',
 		'priority' => 'default',
 		'autosave' => false,

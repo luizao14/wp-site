@@ -5,7 +5,7 @@ function loja_meta_box( $meta_boxes ) {
 	$meta_boxes[] = array(
 		'id' => 'loja',
 		'title' => esc_html__( 'Detalhes da loja', 'metabox-online-generator' ),
-		'post_types' => array( 'loja' ),
+		'post_types' => array( 'ong_loja' ),
 		'context' => 'advanced',
 		'priority' => 'default',
 		'autosave' => false,
