@@ -27,4 +27,6 @@ theme_create_page('Loja','loja.php');
 theme_create_page('Voluntários', 'voluntarios.php');
 theme_create_page('Blog','blog.php');
 theme_create_page('Sobre','sobre.php');
+theme_create_page('faleConosco','faleConosco.php');
+theme_create_page('doe','doe.php');
 ?>

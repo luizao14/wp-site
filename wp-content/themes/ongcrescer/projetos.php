@@ -10,7 +10,6 @@
 ?>
 
 <?php get_header(); ?>
-
 <main class="l-main">
 	<div class="l-projetos">
 		<div class="row-content">

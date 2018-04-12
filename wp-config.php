@@ -26,13 +26,13 @@ if (empty($database_url)){
   define('DB_NAME', 'ongcrescer');
 
   /** MySQL database username */
-  define('DB_USER', 'ufrpcmxpiojfoy');
+  define('DB_USER', 'root');
 
   /** MySQL database password */
-  define('DB_PASSWORD', '55253da1a9720bf96485ad9c74b560cbba3883a3ad24920bd5dc0743e108d63f');
+  define('DB_PASSWORD', 'luiz');
 
   /** MySQL hostname */
-  define('DB_HOST', 'ec2-54-243-210-70.compute-1.amazonaws.com');
+  define('DB_HOST', 'localhost');
 
 } else {
   $schema = parse_url($database_url);

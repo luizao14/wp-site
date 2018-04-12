@@ -18,6 +18,7 @@
 	<?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/app/header.js"></script>
+        <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/app/faleConosco.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -77,7 +78,7 @@
             <li class="menus-ongcrescer">
                 <a class="link-ongcrescer" href="">Como Ajudar?</a>
                 <ul class="submenu">
-                  <li><a href="">Faça uma Doação</a></li>
+                  <li><a href="doe">Faça uma Doação</a></li>
                   <li><a href="voluntarios">Voluntariado</a></li>
                   <li><a href="">Seja Sócio</a></li>
                   <li><a href="">Participe dos Eventos</a></li>
@@ -90,7 +91,7 @@
               <a href="blog">Blog</a>
             </li>
             <li>
-              <a href="">Fale Conosco</a>
+              <a href="faleConosco">Fale Conosco</a>
             </li>
           </ul>
         </nav>

@@ -60,10 +60,12 @@
                         ?>
                         <div class="espaco-linha">
                             <div class="row-content">
+                                <a href="<?php the_permalink();?>">
                                 <?php if ( $image_background == TRUE){?>
                                 <img class="imagem-blog" src="<?php echo $image_background ?>"><?php }else{?>
                                 <img class="imagem-blog" src="<?php image_url("perfil.jpg") ?>" />
                                 <?php }?>
+                                </a>
                                 <div>
                                 <p class="blog-title"><?php the_title(); ?></p>
                                 <div>
