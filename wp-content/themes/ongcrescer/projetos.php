@@ -16,11 +16,10 @@
 			<div class="col-md-12 titulo-projeto">
 				<h1 class="title">Nossos Projetos</h1>
 			</div>
+                    
 			<div class="row botoes-cima">
 				<div class="col-12 col-4 ml-auto">
-                                    <a href="" class="btn btn-warning btn-lg">PONTUAIS</a>
-					<a href="" class="btn btn-warning btn-lg">RECORRENTES</a>
-					<a href="" class="btn btn-warning btn-lg">ENCERRADOS</a>
+                                    <div id="categorias-projetos"><?php wp_nav_menu( array('menu' =>'projetos'));?></div>
 				</div>
 			</div><!-- row botoes-cima -->
 <!-- A partir daqui monta-se as caixas dos projetos -->

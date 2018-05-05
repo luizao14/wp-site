@@ -8,6 +8,17 @@
 		font-size: 1.8em;
 		font-weight: bold;
 	}
+        
+        #categorias-projetos li{
+                background-color: #f9c509;
+                padding: 0.3em 1em 0.3em 1em;
+                display: inline-block;
+            }
+        
+        #categorias-projetos a{
+                font-size: 11pt;
+                color: white;
+        }
 
 	.titulo-caixa {
 		font-size: 0.98em;
@@ -60,7 +71,7 @@
 .causas{
     display: inline-block;
 }
-}
+
 
 
 
@@ -74,4 +85,8 @@
             margin-top: 1em;
         }
     }
+    #categorias-projetos li{
+                margin-top: 1em;
+            }
+}
 }

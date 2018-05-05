@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
                                 type: "POST",
                                 data: dados,
                                 
-                beforeSend: function (data) {
+                beforeSend: function () {
                     $("#mensagem-faleConosco").html("Carregando...");
                     },
                                 

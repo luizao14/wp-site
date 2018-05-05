@@ -20,35 +20,71 @@
     clear: both;
     border-top: 1px solid $white-1;
     margin-top: 2em;
-
-    a {
-      color: $dark-gray;
-      font-weight: bold;
-    }
-
-    li {
-      display: inline-block;
-      padding: 1.1em 0;
-      margin-right: 1.5em;
-
-      > .submenu { display: none;}
-      > .submenu-active { display: block; }
-      
-    }
-    .menus-ongcrescer:hover ul.submenu{ display: block;}
-    .submenu li{ display: block;}
-    .submenu{z-index: 1; position: absolute; background-color: white; border: whitesmoke solid;}
   }
   
   #dash{ cursor: pointer; display: none; font-size: 3em; margin-bottom: 0;}
-  
-  @media screen and (max-width: 1000px) {
+
+div.nav-menu li {
+    position: relative;
+    display: inline-block;
+    padding: 1.1em 0;
+    margin-right: 1.5em;
+}
+div.nav-menu a {
+    font-weight: bold;
+    color: $dark-gray;
+    text-decoration: none;
+    display: block;
+}
+div.nav-menu > ul > li {
+    display: inline-block;
+}
+div.nav-menu > ul > li > a{
+    cursor: pointer;
+}
+div.nav-menu > ul > li:hover > a{
+    text-decoration: underline;
+}
+
+/* Sub/Children Menu */
+div.nav-menu .sub-menu,
+div.nav-menu .children {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    background: white;
+    min-width: 200px;
+    display: none;
+    border: whitesmoke solid;
+}
+div.nav-menu li:hover > .sub-menu,
+div.nav-menu li:hover > .children {
+    display: block;
+}
+div.nav-menu .sub-menu a,
+div.nav-menu .children a {
+    padding: 5px 10px;
+}
+div.nav-menu .sub-menu li:hover a,
+div.nav-menu .children li:hover a {
+    text-decoration: underline;
+}
+
+/* Grandchildren Menu */
+div.nav-menu .sub-menu .sub-menu,
+div.nav-menu .children .children {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
     nav#menu{
         margin-top: 0;
         box-shadow: 1px 1px 1px 7px white;
         display: none;
-        .menus-ongcrescer:hover ul.submenu{ display: inline;}
-        .submenu li{ display: inline;}
         li{
             padding: 0;
             width: 90%;
@@ -62,11 +98,24 @@
                 color: $white-0;
             }
         }
+        
+        div.nav-menu .sub-menu,
+        div.nav-menu .children {
+            display: none;
+            position: relative;
+        }
+        
+        div.nav-menu .sub-menu a {
+            color: white;
+        }
+        div.nav-menu .sub-menu a:hover {
+            color: black;
+        }
         li:hover{
             background-color: $white-0;
             transition: 1s;
             .submenu{position: relative;}
-            .submenu li{ display: block; background-color: white; margin-right: 0; margin-left: 1em;}
+            .submenu li{ background-color: white; margin-right: 0; margin-left: 1em;}
         }
         li:hover a{
                 color: black;
@@ -77,7 +126,7 @@
                     color: white;
                 }
                 background-color: none;
-                .submenu li{ display: block; background-color: black; margin-right: 0; margin-left: 1em;}
+                .submenu li{ background-color: black; margin-right: 0; margin-left: 1em;}
                 
             }
             li.menus-ongcrescer:hover {
@@ -98,7 +147,6 @@
     #dash{
         display: block;
     }
-    
 }
 }
         

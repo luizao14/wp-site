@@ -58,3 +58,39 @@ border: none;
     padding-bottom: 2em;
     text-align: center;
 }
+
+@media screen and (max-width: 850px) {
+    #textarea-fale-conosco{
+    display: block;
+    width: 100%;
+    margin-left: 0em;
+    margin-top: 2em;
+    height: 290px;
+    float: none;
+}
+
+#form-fale-conosco div{
+   display:block;
+    width: 100%;
+}
+
+#form-fale-conosco div:last-child{
+    width: 100%;
+    position: relative;
+}
+
+.enviar-fale-conosco{
+    float: right;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 10px 20px;
+}
+
+#contato-fale-conosco{
+    font-weight: 600;
+    font-size: 18pt;
+    margin-top: 6em;
+    padding-bottom: 2em;
+    word-wrap: break-word;
+}
+}

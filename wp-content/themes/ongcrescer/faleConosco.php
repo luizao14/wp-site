@@ -11,11 +11,15 @@
 
 <?php get_header(); ?>
 
+                <?php the_content();?>
+              
+
+
 <main class="l-main">
     <div class="l-fale-conosco">
         <div class="row-content">
             <h1>Fale Conosco</h1>
-            <form id="form-fale-conosco" enctype="multipart/form-data">
+            <form action="mensagem.php" method="post" id="form-fale-conosco" enctype="multipart/form-data">
                 <div>
                     <input class="campo-fale-conosco" name="cnome" placeholder="Nome Completo" required=""/>
                     <input class="campo-fale-conosco" name="cmail" placeholder="Endereço de E-mail" type="email" required=""/>
@@ -29,7 +33,6 @@
             <label for="file-fale-conosco" class="enviar-fale-conosco">Anexar Arquivo</label>
                 </div>
             </form>
-            <div id="mensagem-faleConosco"></div>
             <p id="contato-fale-conosco">&#9993; ou envie-nos um email via contato@crescerfomentoavida.com.br</p>
         </div><!-- /row-content -->
     </div><!-- /l-projetos -->

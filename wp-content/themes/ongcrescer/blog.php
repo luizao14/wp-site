@@ -42,13 +42,21 @@
             <h2 id="h2-blog">Artigos Recentes</h2>
             <div class="row blog-bloco">
                 <?php
+                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                
                 $args = array(
                     'post_type' => 'ong_blog',
+                    "posts_per_page" => 4,
+                    'paged' => $paged,
                     'orderby'   => 'title',
                     'order'     => 'ASC',
                     );
                 $my_page = get_posts($args);
                 ?>
+                
+                <?php
+                                           $count_posts = wp_count_posts('ong_blog')->publish;
+                                            ?>
                 <?php if ($my_page) : foreach ($my_page as $post) : setup_postdata($post); ?>
 
                         <?php
@@ -84,13 +92,32 @@
                 <p><?php esc_html_e( 'Ainda não há artigos publicados.' ); ?></p>
                 <?php endif; ?>
             </div><!-- row -->
-            <ul id="paginacao-blog">
-                    <li class="paginacao-blog-numeros">1</li>
-                    <li class="paginacao-blog-numeros">2</li>
-                    <li class="paginacao-blog-numeros">3</li>
-                    <li class="paginacao-blog-numeros">4</li>
-                    <li class="paginacao-blog-numeros">5</li>
-                </ul>
+            <div class="row-content">
+					<center>
+						<div class="espaco-linha-pagination">
+							<nav aria-label="Page navigation example">
+							  <ul class="pagination justify-content-center">
+                                                              <?php if($paged <> 1) :?>
+							    <li class="page-item">
+							      <div class="page-link" style="background-color: black;" aria-label="Previous">
+                                                                  <a href="<?php previous_posts();?>"><span aria-hidden="true">&laquo;</span></a>
+							        <span class="sr-only">Previous</span>
+							      </div>
+							    </li>
+                                                            <?php endif;?>
+							    <li class="page-item"><div class="page-link" style="background-color: black;"><?php echo $paged;?></div></li>
+							    <?php if($paged <> ceil($count_posts/4)) :?>
+                                                            <li class="page-item">
+                                                                <div class="page-link" style="background-color: black;" aria-label="Next">
+                                                                    <a href="<?php next_posts($max_page = ceil($count_posts/4));?>"><span aria-hidden="true">&raquo;</span></a>
+							      </div>
+							    </li>
+                                                            <?php endif;?>
+							  </ul>
+							</nav>
+						</div>
+					</center>
+				</div>
         </div><!-- /row-content -->
     </div><!-- /l-loja -->
 </main>

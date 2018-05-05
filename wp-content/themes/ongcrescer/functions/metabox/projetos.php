@@ -16,7 +16,7 @@ function projetos_meta_box( $meta_boxes ) {
  				'name' => esc_html__( 'causas', 'metabox-online-generator' ),
  				'desc' => esc_html__( 'causas do projeto', 'metabox-online-generator' ),
  				'std' => 'causas do projeto',
- 				'size' => 80,
+ 				'size' => 60,
  			),
  			array(
  				'id' => $prefix . 'image',

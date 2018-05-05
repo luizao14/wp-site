@@ -49,51 +49,11 @@
     </nav>
 
     <header class="l-header">
-
       <div class="row-content">
         <a id="logo" href="home"><img src="<?php image_url("logo.png") ?>" alt="OngCrescer"/></a>
         <p id="dash">&#9776;</p>
         <nav id="menu">
-          <ul>
-            <li>
-                <a href="home">Home</a>
-            </li>
-            <li class="menus-ongcrescer">
-                <a class="link-ongcrescer" href="sobre">Sobre a ONG</a>
-            <ul class="submenu">
-                  <li><a href="historia">Nossa História</a></li>
-                  <li><a href="premios">Prêmios</a></li>
-            </ul>
-            </li>
-            <li class="menus-ongcrescer">
-                <a class="link-ongcrescer" href="projetos">Projetos</a>
-                <ul class="submenu">
-                  <li><a href="">Enviar um Projeto</a></li>
-                  <li><a href="">Guia de Voluntariado</a></li>
-            </ul>
-            </li>
-            <li>
-              <a href="">Eventos</a>
-            </li>
-            <li class="menus-ongcrescer">
-                <a class="link-ongcrescer" href="">Como Ajudar?</a>
-                <ul class="submenu">
-                  <li><a href="doe">Faça uma Doação</a></li>
-                  <li><a href="voluntarios">Voluntariado</a></li>
-                  <li><a href="">Seja Sócio</a></li>
-                  <li><a href="">Participe dos Eventos</a></li>
-            </ul>
-            </li>
-            <li>
-              <a href="loja">Loja Oficial</a>
-            </li>
-            <li>
-              <a href="blog">Blog</a>
-            </li>
-            <li>
-              <a href="faleConosco">Fale Conosco</a>
-            </li>
-          </ul>
+          <?php wp_nav_menu( array( 'menu' =>'menu_principal', 'theme_location' => 'primary', 'container_class' => 'nav-menu', 'menu_class' => 'nav-menu' ) );?>
         </nav>
       </div>
     </header>
