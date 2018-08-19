@@ -1,6 +1,12 @@
 /* ==|====================
    Layout/Blog
    ======================= */
+
+.l-blog{
+    
+    .blog-bloco{
+            width: 100%;
+        }
         
 figure{
     display: block;
@@ -76,7 +82,21 @@ figcaption{
             transition: 1s;
         }
         
+        .espaco-linha-pagination {
+	margin: 4em 0 1em;
+
+	div {
+            font-size: 10pt;
+		color:$white-0
+	}
+        
+        a{
+		color:$white-0
+        }
+}
+        
         @media screen and (max-width: 1200px) {
     .blog-info {
     }
+}
 }

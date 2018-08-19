@@ -112,3 +112,5 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 require(ABSPATH."wp-content/w3tc-config/master-gen.php");
+
+define('WP_ALLOW_REPAIR', true);

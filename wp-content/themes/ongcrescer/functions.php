@@ -18,4 +18,13 @@ function image_url($image_path){
 }
 
 add_theme_support('post-thumbnails');
+
+function no_rows_found_function($query)
+{ 
+  $query->set('no_found_rows', true); 
+}
+
+add_action('pre_get_posts', 'no_rows_found_function');
+
+
 ?>

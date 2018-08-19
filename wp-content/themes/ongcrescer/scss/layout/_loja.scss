@@ -14,6 +14,18 @@
 		font-weight: bold;
 	}
         
+        #categorias-loja li{
+            background-color: #f9c509;
+                padding: 0.3em 1em 0.3em 1em;
+                border-radius: 10%;
+                display: inline-block;
+            }
+        
+        #categorias-loja a{
+                font-size: 11pt;
+                color: white;
+        }
+        
         .imagem-loja{
             width: 250px;
             height: 250px;
@@ -44,7 +56,7 @@
     width: 10px;
 	}
 
-}
+
 
 i.fa.fa-heart {
     color: red;
@@ -72,12 +84,17 @@ i.fa.fa-heart {
 .espaco-linha-pagination {
 	margin: 4em 0 1em;
 
-	a {
+	div {
+            font-size: 10pt;
 		color:$white-0
 	}
 }
 
 @media screen and (max-width: 1200px) {
+    #categorias-loja li{
+                margin-top: 1em;
+            }
+    
     .espaco-linha {
         width: 50%;
 }
@@ -95,4 +112,5 @@ i.fa.fa-heart {
     }
     
     
+}
 }

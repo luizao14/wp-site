@@ -48,5 +48,3 @@
             
         ?>
         <script type="text/javascript" src="js/faleConosco.js"></script>
-    </body>
-</html>

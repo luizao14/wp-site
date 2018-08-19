@@ -11,7 +11,7 @@ function create_post_type_evento() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-calendar-alt',
-        'taxonomies' => array('category'),
+        'taxonomies' => array('category', 'post_tag'),
             )
     );
 }
@@ -27,7 +27,7 @@ function create_post_type_projetos() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-hammer',
-        'taxonomies' => array('category'),
+        'taxonomies' => array('category', 'post_tag'),
             )
     );
 }
@@ -43,7 +43,7 @@ function create_post_type_loja() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-cart',
-        'taxonomies' => array( 'category' ),
+        'taxonomies' => array( 'category', 'post_tag' ),
             )
     );
 }
@@ -59,7 +59,7 @@ function create_post_type_voluntario() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-groups',
-        'taxonomies' => array( 'category' ),
+        'taxonomies' => array( 'category', 'post_tag' ),
             )
     );
 }
@@ -75,7 +75,7 @@ function create_post_type_blog() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-format-aside',
-        'taxonomies' => array( 'category' ),
+        'taxonomies' => array( 'category', 'post_tag' ),
             )
     );
 }
@@ -85,4 +85,6 @@ function wpdocs_custom_excerpt_length($length) {
 }
 
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
+
+add_theme_support( 'menus' );
 ?>

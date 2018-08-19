@@ -157,7 +157,7 @@ jQuery(document).ready(function(){
                                 type: "POST",
                                 data: dados,
                                 
-                beforeSend: function (data) {
+                beforeSend: function () {
                     $("#mensagem-faleConosco").html("Carregando...");
                     },
                                 
@@ -181,8 +181,13 @@ window.onload = function(){
 $(document).ready(function (){
 $('#dash').click(function(){
 $('#menu').toggle();
+
+$('div.nav-menu li').click(function(){
+$(this).children('.sub-menu').toggle();
 });
 });
+});
+
 
 };
 });
