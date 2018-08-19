@@ -10,6 +10,7 @@
  */
 ?>
 <!DOCTYPE html>
+<div id="modal-login" style="background: green; width: 100%;"></div>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -27,21 +28,21 @@
       <div class="row-content">
         <ul class="social-icons">
           <li class="icon-fb">
-            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/CrescerFomentoaVida.com.br/" target="blank"><i class="fa fa-facebook"></i></a>
           </li>
           <li class="icon-fb">
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.instagram.com/p/BcQPm3_FQEo/" target="blank"><i class="fa fa-instagram"></i></a>
           </li>
           <li class="icon-fb">
-            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="https://pt.linkedin.com/company/crescer.org.br" target="blank"><i class="fa fa-linkedin"></i></a>
           </li>
         </ul>
 
         <ul class="actions">
-            <li class="li-navbar"><span><a href="">(11) 0000-0000</a></span></li>
+            <li class="li-navbar"><span><a href="">(11) 94911-6572</a></span></li>
           <li class="li-navbar"><span><a href="">Suporte</a></span></li>
-          <li class="li-navbar"><span><a href="login">Login</a></span></li>
-          <li class="li-navbar"><span><a href="login">Cadastre-se</a></span></li>
+          <li class="li-navbar"><span><a id='link-login' href="">Login</a></span></li>
+          <li class="li-navbar"><span><a id='link-cadastro' href="">Cadastre-se</a></span></li>
         </ul>
 
         <div class="clear"></div>

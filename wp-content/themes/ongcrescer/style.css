@@ -8359,7 +8359,7 @@ ul {
 
 body {
   font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: century gothic;
   background: #f4f4f4; }
 
 .row-content {
@@ -8459,7 +8459,7 @@ body {
     top: 100%;
     z-index: 1;
     background: white;
-    min-width: 200px;
+    min-width: 250px;
     display: none;
     border: whitesmoke solid; }
   .l-header div.nav-menu li:hover > .sub-menu,
@@ -9022,9 +9022,11 @@ figcaption {
 
 #form-fale-conosco div {
   display: inline-block;
-  width: 35%; }
+  width: 35%;
+  margin-bottom: 4em;
+   }
 
-#form-fale-conosco div:last-child {
+#form-fale-conosco div#abaixo {
   width: 50%;
   position: absolute; }
 
@@ -9032,7 +9034,6 @@ figcaption {
   padding-bottom: 1em;
   padding-top: 1em;
   padding-left: 1em;
-  margin-top: 1em;
   display: block;
   width: 100%; }
 
@@ -9040,16 +9041,16 @@ figcaption {
   display: inline-block;
   width: 95%;
   margin-left: 2em;
-  margin-top: 1em;
-  height: 290px;
+  height: 390px;
   float: right;
   padding-top: 1em;
-  padding-left: 1em; }
+  padding-left: 1em;
+   }
 
 .enviar-fale-conosco {
   float: right;
   margin-left: 1em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   padding: 20px 50px;
   background: -moz-linear-gradient(left, orange, #fa7306);
   background: -webkit-linear-gradient(left, orange, #fa7306);
@@ -9057,12 +9058,22 @@ figcaption {
   background: -ms-linear-gradient(left, orange, #fa7306);
   background: linear-gradient(left, orange, #fa7306);
   color: #fff;
-  border: none; }
+  border: none; 
+  cursor: pointer;
+}
+
+#file-fale-conosco{
+  display: none;
+}
+
+#form-fale-conosco label{
+  margin-top: 0;
+}
 
 #contato-fale-conosco {
   font-weight: 600;
   font-size: 18pt;
-  margin-top: 6em;
+  margin-top: 4em;
   padding-bottom: 2em;
   text-align: center; }
 
@@ -9074,17 +9085,20 @@ figcaption {
     margin-top: 2em;
     height: 290px;
     float: none; }
+
   #form-fale-conosco div {
     display: block;
     width: 100%; }
-  #form-fale-conosco div:last-child {
+
+  #form-fale-conosco div#abaixo {
     width: 100%;
     position: relative; }
+
   .enviar-fale-conosco {
     float: right;
     margin-left: 1em;
-    margin-top: 1em;
     padding: 10px 20px; }
+
   #contato-fale-conosco {
     font-weight: 600;
     font-size: 18pt;

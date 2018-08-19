@@ -29,7 +29,7 @@ if (empty($database_url)){
   define('DB_USER', 'root');
 
   /** MySQL database password */
-  define('DB_PASSWORD', 'luiz');
+  define('DB_PASSWORD', '');
 
   /** MySQL hostname */
   define('DB_HOST', 'localhost');
@@ -112,3 +112,5 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 require(ABSPATH."wp-content/w3tc-config/master-gen.php");
+
+define('WP_ALLOW_REPAIR', true);

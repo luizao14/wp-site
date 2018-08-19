@@ -92,6 +92,7 @@
                 <p><?php esc_html_e( 'Ainda não há artigos publicados.' ); ?></p>
                 <?php endif; ?>
             </div><!-- row -->
+            <?php if($count_posts > 4) :?>
             <div class="row-content">
 					<center>
 						<div class="espaco-linha-pagination">
@@ -118,6 +119,7 @@
 						</div>
 					</center>
 				</div>
+            <?php endif;?>
         </div><!-- /row-content -->
     </div><!-- /l-loja -->
 </main>

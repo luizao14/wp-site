@@ -33,4 +33,3 @@ function projetos_meta_box( $meta_boxes ) {
 }
 add_filter( 'rwmb_meta_boxes', 'projetos_meta_box' );
 ?>
-

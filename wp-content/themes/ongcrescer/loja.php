@@ -30,12 +30,14 @@
           
                 $args = array(
                     'post_type' => 'ong_loja',
-                    "posts_per_page" => 1,
+                    "posts_per_page" => 4,
                     'paged' => $paged,
                     'orderby'   => 'title',
                     'order'     => 'ASC',
                     );
                 $query = new WP_Query($args);
+                
+                $count_posts = wp_count_posts('ong_loja')->publish;
                 
                 ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); // run the loop ?>
@@ -74,30 +76,34 @@
                 
 					
 			</div><!-- row -->
-                        
+                        <?php if($count_posts > 4) :?>
 				<div class="row-content">
 					<center>
 						<div class="espaco-linha-pagination">
 							<nav aria-label="Page navigation example">
 							  <ul class="pagination justify-content-center">
+                                                              <?php if($paged <> 1) :?>
 							    <li class="page-item">
 							      <div class="page-link" style="background-color: black;" aria-label="Previous">
                                                                   <a href="<?php previous_posts();?>"><span aria-hidden="true">&laquo;</span></a>
 							        <span class="sr-only">Previous</span>
 							      </div>
 							    </li>
+                                                            <?php endif;?>
 							    <li class="page-item"><div class="page-link" style="background-color: black;"><?php echo $paged;?></div></li>
-							    <li class="page-item">
+							    <?php if($paged <> ceil($count_posts/4)) :?>
+                                                            <li class="page-item">
                                                                 <div class="page-link" style="background-color: black;" aria-label="Next">
                                                                     <a href="<?php next_posts();?>"><span aria-hidden="true">&raquo;</span></a>
 							      </div>
 							    </li>
+                                                            <?php endif;?>
 							  </ul>
 							</nav>
 						</div>
 					</center>
 				</div>
-                        
+                        <?php endif;?>
                         <?php else : ?>
                 <p><?php esc_html_e( 'Ainda não há produtos cadastrados.' ); ?></p>
                                 <?php endif; ?>

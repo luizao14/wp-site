@@ -11,10 +11,23 @@
 
 <?php get_header(); ?>
 
+<?php 
+                $args = array('post_type' => 'page', 'pagename' => 'login');
+                $my_page = get_posts($args);
+                ?>
+                <?php if($my_page) : foreach ($my_page as $post) : setup_postdata($post); ?>
+                
+                <?php the_content();?>
+              
+                <?php endforeach; ?>
+                <?php endif; ?>
+
 <main class="l-main">
     <div class="l-login">
     <div class="row-content">
         <hr>
+        	
+                
         <form id="login">
             <h4>Acesse sua conta</h4>
             <input id="login-email" placeholder="Seu Endereço de E-mail" type="email"/>

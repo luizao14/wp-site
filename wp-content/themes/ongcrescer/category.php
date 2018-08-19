@@ -20,17 +20,21 @@
 			<div class="row loja-bloco">
                             
                             <?php
-                            
+                            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                             
                              $categorias = wp_title('&raquo;',FALSE);
           
                 $args = array(
                     'post_type' => 'ong_loja',
+                    "posts_per_page" => 4,
+                    'paged' => $paged,
                     'orderby'   => 'title',
                     'order'     => 'ASC',
                     'category_name' => $categorias
                     );
                 $my_page = get_posts($args);
+                
+                $count_posts = wp_count_posts('ong_loja')->publish;
                 ?>
                 <?php if($my_page) : foreach ($my_page as $post) : setup_postdata($post); ?>
                             
@@ -64,30 +68,34 @@
             <?php endif; ?>
 					
 			</div><!-- row -->
-
+                        <?php if($count_posts > 4) :?>
 				<div class="row-content">
 					<center>
 						<div class="espaco-linha-pagination">
 							<nav aria-label="Page navigation example">
 							  <ul class="pagination justify-content-center">
+							    <?php if($paged <> 1) :?>
 							    <li class="page-item">
-							      <a class="page-link" style="background-color: black;" href="#" aria-label="Previous">
-							        <span aria-hidden="true">&laquo;</span>
+							      <div class="page-link" style="background-color: black;" aria-label="Previous">
+                                                                  <a href="<?php previous_posts();?>"><span aria-hidden="true">&laquo;</span></a>
 							        <span class="sr-only">Previous</span>
-							      </a>
+							      </div>
 							    </li>
-							    <li class="page-item"><a class="page-link" style="background-color: black;" href="#">1</a></li>
-							    <li class="page-item">
-							      <a class="page-link" style="background-color: black;" href="#" aria-label="Next">
-							        <span aria-hidden="true">&raquo;</span>
-							        <span class="sr-only">Next</span>
-							      </a>
+                                                            <?php endif;?>
+							    <li class="page-item"><div class="page-link" style="background-color: black;"><?php echo $paged;?></div></li>
+							    <?php if($paged <> ceil($count_posts/4)) :?>
+                                                            <li class="page-item">
+                                                                <div class="page-link" style="background-color: black;" aria-label="Next">
+                                                                    <a href="<?php next_posts();?>"><span aria-hidden="true">&raquo;</span></a>
+							      </div>
 							    </li>
+                                                            <?php endif;?>
 							  </ul>
 							</nav>
 						</div>
 					</center>
 				</div>
+                        <?php endif;?>
 
 		</div><!-- /row-content -->
 	</div><!-- /l-loja -->
@@ -100,12 +108,9 @@
 			<div class="col-md-12 titulo-projeto">
 				<h1 class="title">Nossos Projetos</h1>
 			</div>
-                    <div id="categorias-projetos" style="background-color: black;"><?php wp_nav_menu( array('menu' =>'projetos'));?></div>
 			<div class="row botoes-cima">
 				<div class="col-12 col-4 ml-auto">
-                                    <a href="" class="btn btn-warning btn-lg">PONTUAIS</a>
-					<a href="" class="btn btn-warning btn-lg">RECORRENTES</a>
-					<a href="" class="btn btn-warning btn-lg">ENCERRADOS</a>
+                                    <div id="categorias-projetos"><?php wp_nav_menu( array('menu' =>'projetos'));?></div>
 				</div>
 			</div><!-- row botoes-cima -->
 <!-- A partir daqui monta-se as caixas dos projetos -->
