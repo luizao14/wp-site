@@ -29,7 +29,7 @@
 
             $mail->AddReplyTo($email);
 
-            $address = "luizpaulomdosreis@hotmail.com";
+            $address = "";
             $mail->AddAddress($address);
 
             $mail->Subject = "Mensagem para Ongcrescer";

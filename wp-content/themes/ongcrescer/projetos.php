@@ -45,10 +45,12 @@
     ?>
                             
                             <div class="div-img-projetos">
+
                                 <?php if ( $image_background == TRUE){?>
                                 <img align="middle" class="img-circle" src=" <?php echo $image_background;?>" /><?php }else{?>
                                 <img align="middle" class="img-circle" src="<?php image_url("perfil.jpg") ?>" />
                                 <?php }?>
+
 				</div>
                             <div class="info">
                                     

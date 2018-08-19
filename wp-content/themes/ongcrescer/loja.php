@@ -25,9 +25,11 @@
 		</div><!-- Fim dos botões superiores e titulo loja -->
 		<div class="row-content">
 			<div class="row loja-bloco">
+
                             <?php
                             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
           
+
                 $args = array(
                     'post_type' => 'ong_loja',
                     "posts_per_page" => 4,
@@ -35,6 +37,7 @@
                     'orderby'   => 'title',
                     'order'     => 'ASC',
                     );
+
                 $query = new WP_Query($args);
                 
                 $count_posts = wp_count_posts('ong_loja')->publish;
