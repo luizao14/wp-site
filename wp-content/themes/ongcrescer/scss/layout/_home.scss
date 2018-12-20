@@ -80,10 +80,13 @@
 
 
     @media screen and (max-width: 768px) {
+    	.carousel-box{
+        height: 600px;
+   	 }
         .ong-carousel {
             
         .category-icons {
-            margin-top: -3.5em;
+            margin-top: -2.5em;
             ul {
               display: inline-block;
               background: $white-0;

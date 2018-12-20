@@ -11,10 +11,11 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
-<head>
+<head>	
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/app/header.js"></script>
@@ -49,9 +50,8 @@
     </nav>
 
     <header class="l-header">
-    <?php echo form_login_cadastro();?>
       <div class="row-content">
-        <a id="logo" href="home"><img src="<?php image_url("logo.png") ?>" alt="OngCrescer"/></a>
+        <a id="logo" href="/"><img src="<?php image_url("logo.png") ?>" alt="OngCrescer"/></a>
         <p id="dash">&#9776;</p>
         <nav id="menu">
           <?php wp_nav_menu( array( 'menu' =>'menu_principal', 'theme_location' => 'primary', 'container_class' => 'nav-menu', 'menu_class' => 'nav-menu' ) );?>

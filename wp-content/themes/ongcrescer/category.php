@@ -8,7 +8,7 @@
 	<div class="l-loja">
 		<div class="row-content"><!-- Inicio dos botões superiores e titulo loja -->
 			<div class="col-12 titulo-loja">
-				<h1 class="title-loja">Loja da ONG	</h1>
+				<h1 class="title-loja">Loja da ONG</h1>
 			</div>
 			<div class="row botoes-cima">
 				<div class="col-12 col-4">
@@ -22,14 +22,13 @@
                             <?php
                             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                             
-                             $categorias = wp_title('&raquo;',FALSE);
+                             $categorias = $_SERVER['REQUEST_URI'];
           
                 $args = array(
                     'post_type' => 'ong_loja',
                     "posts_per_page" => 4,
                     'paged' => $paged,
-                    'orderby'   => 'title',
-                    'order'     => 'ASC',
+                    'orderby'   => 'id',
                     'category_name' => $categorias
                     );
                 $query = new WP_Query($args);
@@ -129,12 +128,11 @@
                             <?php
                             
                             
-                             $categorias = wp_title('&raquo;',FALSE);
+                             $categorias = $_SERVER['REQUEST_URI'];
           
                 $args = array(
                     'post_type' => 'ong_projetos',
-                    'orderby'   => 'title',
-                    'order'     => 'ASC',
+                    'orderby'   => 'id',
                     'category_name' => $categorias
                     );
                 $my_page = get_posts($args);
@@ -199,14 +197,13 @@
                             <?php
                             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                             
-                            $categorias = wp_title('&raquo;',FALSE);
+                            $categorias = $_SERVER['REQUEST_URI'];
           
                 $args = array(
                     'post_type' => 'ong_event',
                     "posts_per_page" => 8,
                     'paged' => $paged,
-                    'orderby'   => 'title',
-                    'order'     => 'ASC',
+                    'orderby'   => 'id',
                     'category_name' => $categorias
                     );
                 $query = new WP_Query($args);
@@ -245,7 +242,7 @@
                                                         <figcaption>
                                                             <p class="titulo-caixa-evento"><?php echo rwmb_meta( 'eventos-hora' );?></p>
                                                             <div class="caixa-preco"><strong>
-									<?php if (rwmb_meta( 'eventos-title' ) == TRUE) echo rwmb_meta( 'eventos-title' ); else echo "Valor não informado" ?>
+									<?php the_title(); ?>
 								</strong>
 							</div><!-- col-10 -->
 							<div class="botao-queroisso">

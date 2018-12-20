@@ -11,6 +11,21 @@ function sobre_meta_box( $meta_boxes ) {
 		'priority' => 'default',
 		'autosave' => false,
                 'fields' => array(
+                	array(
+				'id' => $prefix . 'titulo',
+				'type' => 'text',
+				'name' => esc_html__( 'Título da Página', 'metabox-online-generator' ),
+				'desc' => esc_html__( 'Área reservada para escrita do título', 'metabox-online-generator' ),
+				'std' => 'Nossa História',
+				'size' => 40,
+			),
+			array(
+				'id' => $prefix . 'content',
+				'type' => 'textarea',
+				'name' => esc_html__( 'campo da página', 'metabox-online-generator' ),
+                                'desc' => esc_html__( '----------------------------------------', 'metabox-online-generator' ),
+                                'std' => 'sem conteúdo',
+			),
 			array(
 				'id' => $prefix . 'title-1',
 				'type' => 'text',

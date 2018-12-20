@@ -64,7 +64,7 @@
   
        <h2 class="eventos-title">Próximos Eventos</h2>
   
-       <p class="subtitle">Lorem ipsum</p>
+       <p class="subtitle"><?php echo rwmb_meta( 'home-destaque-evento-desc' );?></p>
        <div class="categorias-eventos"><?php wp_nav_menu( array('menu' =>'eventos'));?></div>
        <div class="row evento-bloco">
        <?php
@@ -74,8 +74,7 @@
                     'post_type' => 'ong_event',
                     "posts_per_page" => 4,
                     'paged' => $paged,
-                    'orderby'   => 'title',
-                    'order'     => 'ASC',
+                    'orderby'   => 'id',
                     );
                 $query = new WP_Query($args);
                 
@@ -103,7 +102,7 @@
         <?php }?>
         </a>
   
-         <h3 class="evento-title"><?php if (rwmb_meta( 'eventos-title' ) == TRUE) echo rwmb_meta( 'eventos-title' ); else echo "Valor não informado" ?></h3>
+         <h3 class="evento-title"><?php the_title(); ?></h3>
   
          <span class="evento-hora"><?php echo rwmb_meta( 'eventos-hora' );?></span>
   

@@ -9,7 +9,7 @@ class logar {
     var $logar = "<div id='header-login'>
             <div class='logo_login'>
             <div>x</div>
-            <img src='http://localhost/wp-site-master/wp-content/themes/ongcrescer/images/logo_ong.png'/>
+            <img src='https://crescerfomentoavida.com.br/wp-content/themes/ongcrescer/images/logo_ong.png'/>
             </div>
             <form class='login'>
             <h4>Acesse sua conta</h4>

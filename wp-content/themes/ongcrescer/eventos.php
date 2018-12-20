@@ -28,8 +28,7 @@
                     'post_type' => 'ong_event',
                     "posts_per_page" => 8,
                     'paged' => $paged,
-                    'orderby'   => 'title',
-                    'order'     => 'ASC',
+                    'orderby'   => 'id',
                     );
                 $query = new WP_Query($args);
                 
@@ -108,7 +107,7 @@
 				</div>
                         <?php endif;?>
                         <?php else : ?>
-                <p><?php esc_html_e( 'Ainda não há produtos cadastrados.' ); ?></p>
+                <p><?php esc_html_e( 'Ainda não há eventos.' ); ?></p>
                                 <?php endif; ?>
                 
                 

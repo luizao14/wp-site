@@ -3,9 +3,7 @@ function theme_create_page($title, $template="", $content="sem conteúdo"){
   if (is_admin()){
     $page_check = get_page_by_title($title);
     $new_page = array(
-      'post_type' => 'page',
-      'post_title' => $title,
-      'post_content' => $content,
+      'post_type' => 'paginas',
       'post_status' => 'publish',
       'post_author' => 1,
     );

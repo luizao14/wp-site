@@ -9,7 +9,8 @@
 
 
 #form-fale-conosco div{
-   display: inline-block;
+    display: inline-block;
+    margin-bottom: 4em;
     width: 35%;
 }
 
@@ -21,7 +22,6 @@
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 1em;
-    margin-top: 1em;
     display: block;
     width: 100%;
 }
@@ -31,7 +31,7 @@
     width: 95%;
     margin-left: 2em;
     margin-top: 1em;
-    height: 360px;
+    height: 390px;
     float: right;
     padding-top: 1em;
     padding-left: 1em;
@@ -40,7 +40,7 @@
 .enviar-fale-conosco{
     float: right;
     margin-left: 1em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     padding: 20px 50px;
     background: -moz-linear-gradient(left, orange, #fa7306); 
 background: -webkit-linear-gradient(left, orange, #fa7306); 
@@ -49,6 +49,15 @@ background: -ms-linear-gradient(left, orange, #fa7306);
 background: linear-gradient(left, orange, #fa7306); 
 color: #fff;
 border: none;
+cursor: pointer;
+}
+
+#file-fale-conosco{
+  display: none;
+}
+
+#form-fale-conosco label{
+  margin-top: 0;
 }
 
 #contato-fale-conosco{
@@ -82,7 +91,6 @@ border: none;
 .enviar-fale-conosco{
     float: right;
     margin-left: 1em;
-    margin-top: 1em;
     padding: 10px 20px;
 }
 

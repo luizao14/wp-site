@@ -25,7 +25,7 @@
                         <div class="imagem-fundo-sobre"></div>
                     <?php } ?>
                     <figcaption>
-                        <h1><?php the_title(); ?></h1>
+                        <h1><?php echo rwmb_meta( 'sobre-titulo' ); ?></h1>
                         <p>
                             <?php
                             $args = array('post_type' => 'page', 'pagename' => 'sobre');
@@ -33,7 +33,7 @@
                             ?>
                             <?php if ($my_page) : foreach ($my_page as $post) : setup_postdata($post); ?>
 
-                                    <?php the_content(); ?>
+                                    <?php echo rwmb_meta( 'sobre-content' ); ?>
 
                                 <?php endforeach; ?>
                             <?php endif; ?>

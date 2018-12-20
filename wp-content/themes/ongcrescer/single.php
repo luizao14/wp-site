@@ -364,7 +364,7 @@
                                                         <figcaption>
                                                             <p class="titulo-caixa-evento"><?php echo rwmb_meta( 'eventos-hora' );?></p>
                                                             <div class="caixa-preco"><strong>
-									<?php if (rwmb_meta( 'eventos-title' ) == TRUE) echo rwmb_meta( 'eventos-title' ); else echo "Valor não informado" ?>
+									<?php the_title();?>
 								</strong>
 							</div><!-- col-10 -->
 							<div class="botao-queroisso">

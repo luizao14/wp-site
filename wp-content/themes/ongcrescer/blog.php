@@ -48,8 +48,7 @@
                     'post_type' => 'ong_blog',
                     "posts_per_page" => 4,
                     'paged' => $paged,
-                    'orderby'   => 'title',
-                    'order'     => 'ASC',
+                    'orderby'   => 'id',
                     );
                 $my_page = get_posts($args);
                 ?>
